@@ -1,0 +1,332 @@
+.cart {
+    position: fixed;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(204, 206, 205, 0.76);
+    border-radius: 1em;
+    left: 6em;
+}
+
+#myModal button {
+    float: left;
+    background-color: rgb(40, 97, 117);
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    border-radius: 2px;
+    color: #efefef;
+    font-size: 2em;
+    margin: 0.5em;
+    padding: 0.2em;
+}
+
+span.close { float: left!important; }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.menuDishes li img {
+    width: 100%;
+    height: 230px;
+    opacity: 0.7;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.menuDishes li img:hover {
+    opacity: 1;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+button.openPopUp {
+    background-color: transparent;
+    border: 2px solid #9e9d9d;
+    color: #808080;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+button.openPopUp:hover {
+    background-color: #808080;
+    color: #f1f1f1;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+ul.menuDishes li {
+    width: 300px;
+    overflow: hidden;
+    margin: 1em;
+    display: inline-block;
+    border: 1px solid #efefef;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.modal-body li{
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+ul.menuDishes li.active {
+    border-color: #000!important;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+i.fa.fa-shopping-cart {
+    font-size: 4em;
+    color: #929292;
+    text-align: center;
+    width: 100%;
+}
+
+.menuDishes strong, .menuDishes span { display: block; }
+
+.cart .total {
+    position: absolute;
+    bottom: 1em;
+    left: 4em;
+}
+
+.cart .total {
+    position: absolute;
+    bottom: 1em;
+    left: 4em;
+}
+
+.cart li {
+    list-style-type: none;
+}
+
+.cart {
+    padding: 1em;
+}
+
+.cart ul {
+    padding: 1em;
+    max-height: 344px;
+    overflow-y: scroll;
+}
+
+.cart ul * {
+    text-align: center;
+}
+
+.cart h3.active{ display: block!important; }
+
+.cart button {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    font-size: 1.5em;
+    width: 1.5em;
+    color: #fff;
+}
+
+.cart button.increase {
+    background-color: rgba(22, 179, 69, 0.69);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s
+}
+
+.cart button.increase:hover {
+    background-color: rgb(22, 179, 69)!important;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s
+}
+
+.cart button.decrease {
+    background-color:rgba(179, 22, 22, 0.69);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s
+}
+
+.cart button.decrease:hover {
+    background-color: rgb(179, 22, 22)!important;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s
+}
+
+.cart li div {
+    margin: 0.5em;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
+/* Buzz Out */
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active, .hvr-buzz-out {
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+li.active:before {
+    content: '✔';
+    color: green;
+}
